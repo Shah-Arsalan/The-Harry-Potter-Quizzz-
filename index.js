@@ -1,7 +1,8 @@
 var readlinesync = require('readline-sync');
-console.log("Welcome to The Harry Potter quiz!!!\n---------------------------------\nThis Quiz is made to test your knowledge about the magical world of Harry Potter\n-----------------------------------\n ")
+console.log(`Welcome  to The Harry Potter quiz!!!\n---------------------------------\nThis Quiz is made to test your knowledge about the magical world of Harry Potter\n-----------------------------------\n `)
 console.log("Each right answer will give you a +1\n\nPlay the game and see if you can beat the High Score!\n\n")
 console.log("****Answer with a,b,c,d (use smallcase only)******\n\n")
+var userName = readlinesync.question('Enter your name');
  var score = 0;
  function quiz(question,answer){
     var answerByUser = readlinesync.question(question)
@@ -103,8 +104,8 @@ console.log("\n-------------------------------------\n")
  console.log("Anjum :" + anjum.score  )
 console.log("\n-------------------------------------\n")
 if (score == arsalan.score){
-  console.log("Congratulations!! You have tied your score with Hall of Famers")
+  console.log(`Congratulations!! ${userName} You have tied your score with Hall of Famers`)
   console.log("Send a snapshot of your score to Arsalan . He will add you to the Hall of Fame")
 }else {
-  console.log("Sorry you couldn't match the highscore.Try again")
+  console.log(`Sorry ${userName} you couldn't match the highscore.Try again`)
 }
