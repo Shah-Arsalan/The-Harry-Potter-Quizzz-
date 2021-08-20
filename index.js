@@ -107,5 +107,5 @@ if (score == arsalan.score){
   console.log(`Congratulations!! ${userName} You have tied your score with Hall of Famers`)
   console.log("Send a snapshot of your score to Arsalan . He will add you to the Hall of Fame")
 }else {
-  console.log(`Sorry ${userName} you couldn't match the highscore.Try again`)
+  console.log(`Sorry ${userName} you couldn't match the highscore.Your final score is ${score}`)
 }
